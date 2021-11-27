@@ -28,15 +28,15 @@
             </div>
 			<div class="field">
                 <label for="ścieżka_litera_dysku_małe">Ścieżka litera dysku (małe)</label>
-                <input type="text" pattern="" placeholder="C:\windows\temp" id="ścieżka_litera_dysku_małe" required>
+                <input type="text" pattern="[a-zA-Z]:[\\\/](?:[a-z0-9]+[\\\/]?)*" placeholder="C:\windows\temp" id="ścieżka_litera_dysku_małe" required>
             </div>
 			<div class="field">
                 <label for="ścieżka_litera_dysku">Ścieżka litera dysku</label>
-                <input type="text" pattern="" placeholder="C:\windows\Temp" id="ścieżka_litera_dysku" required>
+                <input type="text" pattern="[a-zA-Z]:[\\\/](?:[a-zA-Z0-9]+[\\\/]?)*" placeholder="C:\windows\Temp" id="ścieżka_litera_dysku" required>
             </div>
 			<div class="field">
                 <label for="ścieżka_do_pliku_w_katalogu_etc">Ścieżkado pliku w katalogu /etc/</label>
-                <input type="text" pattern="" placeholder="/etc/passwd" id="ścieżka_do_pliku_w_katalogu_etc" required>
+                <input type="text" pattern=":([\\\/]etc[\\\/])(?[a-z0-9]+[\\\/]?)*" placeholder="/etc/passwd" id="ścieżka_do_pliku_w_katalogu_etc" required>
             </div>
 			<div class="field">
                 <label for="adres_ipv6">Adres ipv6</label>
