@@ -7,16 +7,16 @@
     <body>
         <div class="form">
             <div class="field">
-                <label for="email" value="jan.kowalski@gmail.com">Adres email</label>
-                <input type="text" id="email">
+                <label for="email">Adres email</label>
+                <input type="text" placeholder="jan.kowalski@gmail.com" type="email" id="email" required>
             </div>
             <div class="field">
-                <label for="kod_pocztowy value="93-632"">Kod pocztowy</label>
-                <input type="text" id="kod_pocztowy">
+                <label for="kod_pocztowy">Kod pocztowy</label>
+                <input type="text" pattern="[0-9]{2}-[0-9]{3}" placeholder="93-632" id="kod_pocztowy" required>
             </div>
 			<div class="field">
-                <label for="numer_nip" value="111-222-33-44">Numer nip</label>
-                <input type="text" id="numer_nip">
+                <label for="numer_nip">Numer nip</label>
+                <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="111-222-33-44" id="numer_nip" required>
             </div>
         </div>
     </body>
