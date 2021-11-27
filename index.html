@@ -16,7 +16,7 @@
             </div>
 			<div class="field">
                 <label for="numer_nip">Numer nip</label>
-                <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="111-222-33-44" id="numer_nip" required>
+                <input type="text" pattern="([0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2})|([0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3})" placeholder="111-222-33-44" id="numer_nip" required>
             </div>
 			<div class="field">
                 <label for="numer_dowodu">Numer dowodu</label>
@@ -24,7 +24,11 @@
             </div>
 			<div class="field">
                 <label for="adres_ipv4">Adres ipv4</label>
-                <input type="text" pattern="((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" placeholder="0.0.0.0" id="adres_ipv4" required>
+                <input type="text" pattern="(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])" placeholder="0.0.0.0" id="adres_ipv4" required>
+            </div>
+			<div class="field">
+                <label for="strona_www">Strona www</label>
+                <input type="text" pattern="(http\:\/\/|https\:\/\/)?([a-z0-9][a-z0-9\-]*\.)+[a-z0-9][a-z0-9\-]" placeholder="www.aaa.com" id="strona_www" required>
             </div>
         </div>
     </body>
