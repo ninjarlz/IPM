@@ -50,17 +50,33 @@
                 <label for="numer_telefonu">Numer telefonu</label>
                 <input type="text" pattern="(\+[0-9]{1,3})?[0-9]{9}" placeholder="+48501888693" id="numer_telefonu" required>
             </div>
-			<div>
+			<div class="field">
                 <label for="date">Data</label>
-                <input type="date" id="date">
+                <input type="date" id="date" required>
             </div>
-			<div>
+			<div class="field">
                 <label for="date_mon_fri">Data (pon-pt ten tydzień)</label>
-                <input type="date" id="date_mon_fri">
+                <input type="date" id="date_mon_fri" min='2021-12-06' max='2021-12-10' required>
             </div>
-			<div>
+			<div class="field">
+                <label for="time_12hr">Czas 12hr</label>
+                <table>
+					<tr>
+						<input type="time" id="time_12hr" min="00:00" max="11:59" required>
+						<select id="AM_PM">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+					</tr>
+				</table>
+            </div>
+			<div class="field">
+                <label for="time_24hr">Czas 24hr</label>
+                <input type="time" id="time_24hr" required>
+            </div>
+			<div class="field">
                 <label for="color">Kolor</label>
-                <input type="color" id="color">
+                <input type="color" id="color" required>
             </div>
 		</div>
     </body>
