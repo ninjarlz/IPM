@@ -1,0 +1,12 @@
+.field input {
+    flex: 1;
+    border-width: 3px;
+}
+
+.field input:invalid {
+    border-color: red;
+}
+
+.field input:valid {
+    border-color: green;
+}
